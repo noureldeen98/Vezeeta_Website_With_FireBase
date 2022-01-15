@@ -1,0 +1,243 @@
+* {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.iteamNav a:hover {
+    color: blue;
+    border-block: 1px solid white;
+}
+
+/*  */
+
+/* iteam list footer */
+.item {
+
+    list-style: none;
+    padding: .3rem;
+    /* text-align: center; */
+
+}
+
+.item a,
+h4,
+h5 {
+    text-decoration: none;
+    color: white;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}
+
+.itemFootr {
+    list-style: none;
+}
+
+.itemFootr i {
+    float: left;
+    color: white;
+    font-size: 35px;
+}
+
+#divFooter {
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* end */
+
+/* div three */
+#thirdDiv {
+    border: 1px none;
+    border-radius: 11px;
+    background-color: white;
+    margin:1px auto;
+    width: 90%;
+    padding: 2px;
+    height: auto;
+}
+
+/* second div */
+
+#img1 {
+    height: 180px;
+    padding-right: 4em;
+    padding-top: 1em;
+}
+
+
+#img1 {
+    
+    height: 89.5px;
+    background-size: cover;
+    width: 100%;
+}
+
+#aside1 {
+    display: none;
+}
+
+
+#btnGroupDrop1 {
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+    width: 15em;
+    height: 5em;
+    background-color: #ffffff;
+    border: none;
+    color: #0070cd;
+}
+
+#btnGroupDrop1 span {
+    margin-right: 10px;
+}
+
+#btnGroupDrop1:focus {
+    background-color: #dbe8f6;
+    transition-duration: 1s;
+}
+
+#search {
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    width: 12em;
+    height: 5em;
+    background-color: #ef0f0f;
+}
+
+#btnGroupDrop1::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    font-size: 2em;
+    color: #aeaeac;
+    margin-right: 7em;
+}
+
+.ulContainer {
+    display: flex;
+    text-align: initial;
+    padding: 2em;
+}
+
+.ulContainer .right li:first-child,
+.ulContainer .left li:first-child {
+    font-weight: bolder;
+    color: #6f7072;
+}
+
+.ulContainer .right li,
+.ulContainer .left li {
+    padding: 0.2em;
+}
+
+.ulContainer .right li a,
+.ulContainer .left li a {
+    color: #0070cd;
+    font-size: 1.2em;
+}
+
+.ulContainer .right li a:hover,
+.ulContainer .left li a:hover {
+    text-decoration: none;
+}
+
+.secDiv{
+    border: 1px none;
+    border-radius: 11px;
+    margin: auto;
+    width: 90%;
+}
+
+/* seconed col */
+#sec-line {
+
+    border-left: 1px solid grey;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.itemSec {
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+}
+
+.itemSec i {
+
+    font-size: 30px;
+    padding: 1rem;
+}
+
+/* form signup */
+.iteam-form {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#form {
+    justify-content: center;
+    border-radius: 11px 11px 11px 11px;
+    background-color: white;
+    width: 45%;
+    height: auto;
+    margin: 1rem auto;
+
+}
+
+#one {
+    border-radius: 11px 11px 0px 0px;
+    font-size: 16px;
+    background-color: rgb(0, 112, 205);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 1.8rem;
+}
+
+#butt {
+    position: relative;
+    font-size: 14px;
+    outline: 0px;
+    padding: 5px 16px 5px 44px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 103, 178);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin: 25px auto;
+}
+
+/* label  */
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+  }

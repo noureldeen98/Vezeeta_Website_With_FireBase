@@ -1,0 +1,248 @@
+* {
+  padding: 0%;
+  margin: 0;
+  direction: rtl;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+  font-size: 13px;
+}
+
+#navBar {
+  background-color: #0070cd;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.nav-item a {
+  color: white;
+}
+.nav-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.nav-item #now {
+  border: 1px solid white;
+}
+.nav-item #now:hover {
+  background-color: white;
+  text-decoration: none;
+  color: #0070cd;
+}
+
+#navbarNavDropdown {
+  padding: 0.5% 0% 0.5% 30%;
+}
+
+.navbar-brand {
+  padding: 1% 10%;
+}
+
+.dropdown-item span {
+  color: #0070cd;
+}
+
+@media screen and (max-width: 768px) {
+  #navbarNavDropdown {
+    padding: 0%;
+  }
+}
+@media screen and (min-width: 769px) {
+  #img1 {
+    background: url(../Images/calldoc/header1.jpg);
+    height: 180px;
+    padding-right: 4em;
+    padding-top: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  #img1 {
+    background: url(../Images/calldoc/header2.jpg);
+    height: 89.5px;
+    background-size: cover;
+    width: 100%;
+  }
+
+  #aside1 {
+    display: none;
+  }
+}
+#btnGroupDrop1 {
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  width: 30em;
+  height: 5em;
+  background-color: #ffffff;
+  border: none;
+  color: #0070cd;
+}
+#btnGroupDrop1 span {
+  margin-right: 10px;
+}
+#btnGroupDrop1:focus {
+  background-color: #dbe8f6;
+  transition-duration: 1s;
+}
+
+#search {
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  width: 12em;
+  height: 5em;
+  background-color: #ef0f0f;
+}
+
+#btnGroupDrop1::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  font-size: 2em;
+  color: #aeaeac;
+  margin-right: 7em;
+}
+
+.ulContainer {
+  display: flex;
+  text-align: initial;
+  padding: 2em;
+}
+
+.ulContainer .right li:first-child, .ulContainer .left li:first-child {
+  font-weight: bolder;
+  color: #6f7072;
+}
+
+.ulContainer .right li, .ulContainer .left li {
+  padding: 0.2em;
+}
+
+.ulContainer .right li a, .ulContainer .left li a {
+  color: #0070cd;
+  font-size: 1.2em;
+}
+
+.ulContainer .right li a:hover, .ulContainer .left li a:hover {
+  text-decoration: none;
+}
+
+#alert {
+  background-color: #0170ce;
+  color: white;
+  margin-right: -3.5em;
+  height: 7em;
+  width: 12em;
+  text-align: center;
+  border: none;
+  z-index: 1200;
+}
+
+.row {
+  --bs-gutter-x: 0!important;
+}
+
+.second {
+  background-color: #e2e6ea;
+}
+
+.breadcrumb-item + .breadcrumb-item::after {
+  float: right;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "/");
+}
+
+#aside1 {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: #0070cd;
+  height: 60vh;
+  padding: 0;
+  border: none;
+}
+
+.part7 {
+  background-color: #0070cd;
+  color: white;
+  overflow-x: hidden;
+  width: 100%;
+}
+.part7 a {
+  color: white;
+}
+.part7 .col1, .part7 .col2, .part7 .col3, .part7 .col4, .part7 .col5 {
+  display: flex;
+  flex-direction: column;
+  padding: 0em;
+  margin-left: 2em;
+}
+.part7 .col1 a, .part7 .col2 a, .part7 .col3 a, .part7 .col4 a, .part7 .col5 a {
+  padding: 0.2em;
+}
+.part7 .col1 img, .part7 .col2 img, .part7 .col3 img, .part7 .col4 img, .part7 .col5 img {
+  padding: 0.2em;
+  margin-left: 2em;
+}
+.part7 .col1 span, .part7 .col2 span, .part7 .col3 span, .part7 .col4 span, .part7 .col5 span {
+  padding: 0.2em;
+  font-size: 2em;
+  font-weight: bolder;
+}
+.part7 .col1 #col5Span, .part7 .col2 #col5Span, .part7 .col3 #col5Span, .part7 .col4 #col5Span, .part7 .col5 #col5Span {
+  text-align: center;
+}
+
+@media all and (min-width: 375px) and (max-width: 767px) {
+  .col1 {
+    order: 2;
+  }
+
+  .col2 {
+    order: 1;
+  }
+
+  .col3 {
+    order: 4;
+  }
+
+  .col5 {
+    order: 5;
+  }
+
+  .col4 {
+    order: 3;
+  }
+
+  .col6 {
+    order: 6;
+  }
+
+  .col1 span, .col2 span, .col3 span, .col4 span, .col5 span {
+    font-size: 1.5em !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .col1, .col2, .col3, .col4, .col5 {
+    padding: 0em;
+    margin-left: 0.2em;
+  }
+  .col1 span, .col2 span, .col3 span, .col4 span, .col5 span {
+    font-size: 1.4em !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

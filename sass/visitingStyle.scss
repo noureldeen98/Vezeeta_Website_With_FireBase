@@ -1,0 +1,76 @@
+@import './style.scss';
+#modalHeader {
+    background-color: $navColor ;
+    color: white;
+    text-align: center;
+    height: 2em;
+    h5 {
+        margin: 0em auto;
+    }
+}
+#staticBackdrop {
+    height: 28em;
+    margin-top: 4em;
+}
+.modalContent {
+    padding: .7em;
+    img  {
+        width: 2em;
+        height: 2em;
+        margin-left: .5em;
+    }
+    a {
+        color: $grayColor;
+        text-decoration: none;
+    }
+}
+
+.part7 {
+    font-size: .7em;
+}
+#navbarNavDropdown {
+    font-size: .8em;
+}
+
+@media all and(min-width: 375px) and(max-width: 767px) {
+    .content {
+        height: 30em;
+    }
+}
+
+@media all and(min-width: 768px) and (max-width:769px) {
+    .content {    
+        height: 46em;
+    }
+    #staticBackdrop {
+        margin-top: 10em;
+        height: 35em;
+    }
+    #navBar > a  {
+        margin-left: 0em !important;
+    }
+    #navbarNavDropdown {
+        font-size: .6em;
+    }
+}
+
+@media all and(min-width: 770px) { 
+    .content {
+        height: 26.1em;
+    }
+    #navBar > a  {
+        margin-left: -7em !important;
+    }
+    #navbarNavDropdown {
+        font-size: 1em;
+    }
+    #staticBackdrop {
+        margin-top: 4em;
+    }
+    .part7 {
+        font-size: .8em;
+        a {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visit form</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/visitForm.css">
+</head>
+<body>
+    <div style="width: 100%; overflow-x: hidden;">
+        <div class="container-fluid">
+            <div class="row justify-content-center d-flex">
+                <div class="col-lg-5 col-md-6 col-12 order-2 order-md-1">
+                    <form>
+                        <div class="header">
+                            <h5>ادخل بياناتك وسيتم التواصل معك خلال دقائق </h5>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم</label>
+                            <input type="text" class="form-control" id="name" placeholder="الاسم">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">رقم التليفون</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="رقم التليفون">
+                        </div>
+                        <div class="mb-3 dropdown">
+                            <label for="type" class="form-label">التخصص</label>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر التخصص
+                                </button>
+                                <ul class="dropdown-menu" id='dropdownM'>
+                                    <!-- <li>
+                                        <a class="dropdown-item" href="#">باطنة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">علاج طبيعي</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">قلب واوعية دموية</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">اطفال وحديثي الولادة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">عظام</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">صدر وجهاز تنفسي</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">مخ واعصاب</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> مسالك بولية</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">جراحة عامة</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mb-3 dropdown">
+                            <label for="type" class="form-label">المنطقة</label> 
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    اختر المنطقة
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">هليوبوليس , مدينة نصر</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> القاهرة الجديدة , الرحاب , الشروق , مدينتي</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">  الدقي والمهندسين , الزمالك , العجوزة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">  السادس من اكتوبر , زايد</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">هرم , فيصل , حدائق الاهرام</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">  المعادي , المقطم</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> المنيل , وسط البلد , شبرا</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">  المنصورة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> الزقازيق</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> رشدى , سموحة , سبورتنج</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> ميامي , سيدي بشر , العصافرة</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> فيكتوريا , السيوف , لوران , جناكليس</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"> الابراهيمية ومحطة الرمل</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger">تاكيد</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5 left col-md-6 col-12 order-1 order-md-2">
+                    <div>
+                        <img src="../Images/home/logo.jpg" class="img-fluid">
+                    </div>
+                    <div>
+                        <h4>احجز زيارة منزلية</h4>
+                        <h5>
+                            الآن من خلال فيزيتا يمكنك حجز زيارة منزلية مع دكتور متخصص.
+                        </h5>
+                    </div>
+
+                    <div>
+                        <img src="../Images/visiting/visitForm.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center content">
+                <div class="col-md-8 col-12">
+                    <h5>برجاء العلم:</h5>
+                <ul>
+                    <li>
+                        فيزيتا ليست منشأة طبية و أنما هي وسيط بين مقدمي
+                        الخدمة الصحية المرخصين و 
+                        المرضي عن طريق موقعها الإلكتروني / تطبيقات الهاتف.
+                    </li>
+                    <li>
+                        لا تحل فيزيتا محل علاقة طبيب الرعاية الأولية الموجودة.
+                    </li>
+                    <li>
+                        تخضع الخدمات الطبية التي يقدمها مقدمي الخدمات الصحية لحكمهم المهني.
+                    </li>
+                    <li>لا تضمن فيزيتا كتابة وصفة طبية.</li>
+                    <li>
+                        لا يصف الأطباء و مقدمي الخدمات المواد الخاضعة للتحكم
+                        و الأدوية المدرجة علي الجداول المخدرة والأدوية غير العلاجية وبعض الأدوية
+                        الأخرى التي قد تكون ضارة بسبب احتمال إساءة استخدامها.
+                    </li>
+                    <li>
+                        جميع البيانات التي يتم جمعها من المرضي يتم إستخدامها وفقاً لقوانين و اللوائح بجمهرية مصر العربية
+                    </li>
+                </ul>
+                </div>
+                
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-12 footer">
+                    <h5>
+                        جميع الحقوق محفوظة ٢٠٢٠
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="../js/home.js" type="module"></script>
+</body>
+</html>

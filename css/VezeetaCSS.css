@@ -1,0 +1,148 @@
+body{
+    box-sizing: border-box;
+}
+
+p,h1,h2,h3,h4,h5{
+    font-family: 'Tajawal', sans-serif;
+    
+}
+
+.aboutCovidCenter{
+    border-radius: 15px;
+   
+    text-align: center;
+}
+
+#img1{
+  background: url(../Images/calldoc/header1.jpg);
+  background-repeat: no-repeat;
+  height: 180px;
+  background-size: cover;
+  width: 100%;
+}
+
+ .aboutCovidCenter .imageOfAboutCovidCenter{
+    align-content: center;
+    width:200px; 
+    display: inline;
+ }
+
+
+ .listOfStars{
+    list-style: none;display: flex;flex-direction: row;text-align: center;
+ }
+
+ .divOfDoctorsCards{
+    border-radius: 15px;
+    margin: 10px;
+    background-color: white;
+ }
+
+ .dropDownLists select{
+    width: 100%; 
+    background-color: rgb(245, 245, 245)
+ }
+
+ .cardOfEachDoctor {
+    border-radius: 15px;margin: 10px;flex-basis:100%;box-shadow: rgb(204 204 204) 1px 1px 5px 0px;border-bottom: 1px solid rgb(226, 230, 234);
+ }
+
+ .mainDivimageAboutDoctor{
+    flex-basis:50%;display: inline;
+ }
+
+ .imageAboutDoctor{
+    flex-basis:20%;display: inline;float: right;flex-direction: row;
+ }
+
+ .infoAboutDoctor{
+    flex-basis:40%;display: inline;float: right; flex-direction: column;
+ }
+
+
+
+.timeTable{
+    width: 100%;
+    text-align: center;
+    border:gainsboro 1px solid;
+    border-radius: 10px;
+}
+
+
+.mainDivOfTimeTable{
+    text-align: center;
+    width: 80px; 
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+
+/**************** start part7 *******************/
+.part7 {
+   background-color: #0070cd;
+   color: white;
+ }
+ .part7 a {
+   color: white;
+ }
+ .part7 .col1, .part7 .col2, .part7 .col3, .part7 .col4, .part7 .col5 {
+   display: flex;
+   flex-direction: column;
+   padding: 0em;
+   margin-left: 2em;
+ }
+ .part7 .col1 a, .part7 .col2 a, .part7 .col3 a, .part7 .col4 a, .part7 .col5 a {
+   padding: 0.2em;
+ }
+ .part7 .col1 img, .part7 .col2 img, .part7 .col3 img, .part7 .col4 img, .part7 .col5 img {
+   padding: 0.2em;
+   margin-left: 2em;
+ }
+ .part7 .col1 span, .part7 .col2 span, .part7 .col3 span, .part7 .col4 span, .part7 .col5 span {
+   padding: 0.2em;
+   font-size: 2em;
+   font-weight: bolder;
+ }
+ .part7 .col1 #col5Span, .part7 .col2 #col5Span, .part7 .col3 #col5Span, .part7 .col4 #col5Span, .part7 .col5 #col5Span {
+   text-align: center;
+ }
+ 
+ @media all and (min-width: 375px) and (max-width: 767px) {
+   .col1 {
+     order: 2;
+   }
+ 
+   .col2 {
+     order: 1;
+   }
+ 
+   .col3 {
+     order: 4;
+   }
+ 
+   .col5 {
+     order: 5;
+   }
+ 
+   .col4 {
+     order: 3;
+   }
+ 
+   .col6 {
+     order: 6;
+   }
+ 
+   .col1 span, .col2 span, .col3 span, .col4 span, .col5 span {
+     font-size: 1.5em !important;
+   }
+ }
+ @media all and (min-width: 768px) and (max-width: 1023px) {
+   .col1, .col2, .col3, .col4, .col5 {
+     padding: 0em;
+     margin-left: 0.2em;
+   }
+   .col1 span, .col2 span, .col3 span, .col4 span, .col5 span {
+     font-size: 1.4em !important;
+   }
+ }
+ /**************** end part7 *******************/

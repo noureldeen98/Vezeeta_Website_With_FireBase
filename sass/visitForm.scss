@@ -1,0 +1,64 @@
+$navColor: rgb(0, 112, 205);
+$grayColor: rgb(111, 112, 114);
+$bgOpacity: rgb(229, 241, 255);
+$lightGray: rgb(244, 247, 250);
+* {
+    padding: 0%;
+    margin: 0;
+    direction: rtl;
+    box-sizing: border-box;
+}
+form {
+    background-color: $lightGray;
+    padding: 2em;
+    margin: 4em;
+    color: $grayColor;
+    border-bottom-left-radius: 5em;
+    .dropdown div{
+        background-color: white;
+        width: 100%;
+        button {
+            &::after {
+                margin-right: 18em;
+            }
+        }
+    }
+    > button {
+        width: 100%;
+    }
+}
+.header {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.left {
+    background-color: $navColor;
+    padding: 2em;
+    border-bottom-right-radius: 5em;
+    div {
+        padding: 1em;
+        color: white;
+        &:first-child {
+            text-align: end;
+        }
+        &:nth-child(2) {
+            text-align: center;
+            h5 {
+                padding: .8em;
+            }
+        }
+        &:nth-child(3) {
+            text-align: center;
+        }
+    }
+}
+.content {
+    padding: 3em 0em;
+    color: $grayColor;
+}
+.footer {
+    background-color: $navColor;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}

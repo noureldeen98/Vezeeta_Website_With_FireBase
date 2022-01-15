@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Add to Pharmacy Database</title>
+    <style>
+        * {
+            font-family: "Tajawal", sans-serif;
+        }
+
+        body {
+            background-color: #e8f4f6;
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="background-color: rgb(0, 112, 205);" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" target="_blank" href="/HTML/pharmacy.html">
+                <img src="/Images/pharmacy/logo">
+            </a>
+            <a class="navbar-brand me-5">
+                <i style="color:#e8f4f6;font-size:50px;" class="fas fa-database"></i>
+            </a>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container-fluid" style="width: 95%;">
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="ID" placeholder="Medicine ID" hidden>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="Name" class="col-sm-2 col-form-label">Medicine Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="Name" placeholder="اسم الدواء">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="Type" class="col-sm-2 col-form-label">Medicine Type</label>
+            <div class="col-sm-10">
+                <select id="Type" class="form-select" aria-label="Default select example">
+                    <option disabled selected>اختار نوع الدواء</option>
+                    <option value="Tablet">أقراص</option>
+                    <option value="Dropper">قطارة</option>
+                    <option value="Bottle">زجاجة</option>
+                    <option value="Tube">انبوبة</option>
+                    <option value="Spray">سبراي</option>
+                </select>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="Molarity" class="col-sm-2 col-form-label">Medicine Molarity</label>
+            <div style="width:83%;" class="col-sm-10 input-group">
+                <span style="width:110px" class="input-group-text">مليجرام</span>
+                <input type="text" class="form-control" id="Molarity" placeholder="التركيز">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="Size" class="col-sm-2 col-form-label">Medicine Size</label>
+            <div style="width:83%;" class="col-sm-10 input-group">
+                <span style="width:110px" class="input-group-text">قرص | جم</span>
+                <input type="text" class="form-control" id="Size" placeholder="حجم العبوة">
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="Price" class="col-sm-2 col-form-label">Medicine Price</label>
+            <div style="width:83%;" class="col-sm-10 input-group">
+                <span style="width:110px" class="input-group-text">L.E</span>
+                <input type="text" class="form-control" id="Price" placeholder="السعر">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-11">
+                <input type="text" class="form-control" id="Description" placeholder="Medicine Description" hidden>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group row">
+            <label for="Image" class="col-sm-2 col-form-label">Upload Photo</label>
+            <div style="width:83%;" class="col-sm-10 input-group">
+                <input type="file" accept="image/*" class="form-control" id="Image">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    onclick="uploader()">Upload</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 d-flex mt-5 mb-5 justify-content-center">
+                <button type="button" class="btn"
+                    style="font-size: 25px;background-color: rgb(0, 112, 205);color:white;" onclick="SaveMedicine()">Add
+                    Medicine <i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+        <hr>
+
+        <h1 style="text-align:center;color:rgb(0, 112, 205);font-weight: 900;letter-spacing:-3px;margin:50px 0px;">
+            Vezeeta Pharmacy
+            Database</h1>
+
+        <table id="medicineInfo" class="table table-striped table-hover table-bordered table-sm table-dark ">
+            <thead>
+                <tr style="text-align:center">
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Molarity</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th style="width: 151px;">Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="/js/pharamacyDB.js"></script>
+
+</body>
+
+</html>

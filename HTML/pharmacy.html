@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/pharmacy.css" type="text/css">
+    <title>اطلب كل مستلزماتك الطبية من الصيدلية - فيزيتا</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <header class="row">
+            <nav class="navbar navbar-expand-md navbar-dark header1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="/Images/pharmacy/logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end offcanvas-style" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close btn-close-white text-reset"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body can-spaces">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item can-style">
+                                    <a class="nav-link active nav-element pe-4 can-hide" href="tel://16676">اتصل بنا:
+                                        16676
+                                    </a>
+                                    <a class="nav-link active nav-element can-show" href="tel://16676">اتصل الآن :
+                                        16676
+                                    </a>
+                                </li>
+                                <li class="nav-item can-style">
+                                    <a class="nav-link active nav-element pe-5" aria-current="page" href="#">English</a>
+                                </li>
+                                <li class="nav-item can-style">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn login btn-light can-hide" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        دخول
+                                    </button>
+                                    <a class="nav-link active nav-element can-show" data-bs-target="#exampleModal"
+                                        data-bs-toggle="modal" aria-current="page" href="#">دخول</a>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content mcs">
+                                                <div class="modal-header ">
+                                                    <h5 style="margin-left: 40%;" class="modal-title text-dark modal-h"
+                                                        id="exampleModalLabel">تسجيل
+                                                        الدخول</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="row g-3 needs-validation" novalidate>
+                                                        <div class="col-md-12">
+                                                            <div style="direction:rtl;">
+                                                                <label for="validationCustomUsername"
+                                                                    class="form-label float-end">
+                                                                    رقم الموبايل <sup>*</sup>
+                                                                </label>
+                                                                <br>
+                                                            </div>
+                                                            <div class="input-group has-validation">
+                                                                <span class="input-group-text"
+                                                                    id="inputGroupPrepend">+20</span>
+                                                                <input type="text" class="form-control"
+                                                                    id="validationCustomUsername"
+                                                                    placeholder="01xxxxxxxxx"
+                                                                    aria-describedby="inputGroupPrepend" required>
+                                                                <div class="invalid-feedback">
+                                                                    برجاء إدخال رقم الموبايل
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="direction:rtl;" class="col-md-12">
+                                                            <label for="validationCustom01"
+                                                                class="form-label float-end">
+                                                                الإسم بالكامل <sup>*</sup>
+                                                            </label>
+                                                            <input type="text" class="form-control"
+                                                                id="validationCustom01" placeholder="أدخل اسمك بالكامل"
+                                                                required>
+                                                            <div class="invalid-feedback">
+                                                                برجاء إدخال الإسم بالكامل
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12 d-flex justify-content-center">
+                                                            <button class="btn modal-btn btn-primary mt-3"
+                                                                type="submit">تحقق
+                                                                من رقم
+                                                                هاتفك</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <header id="header2" class="header2 row">
+            <p class="col-11">جميع الأدوية يتم صرفها من صيدليات مرخصة من وزارة الصحة بجمهورية مصر العربية</p>
+            <button onclick="close_head()" type="button" class="close" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+        </header>
+
+        <section class="section1 row">
+            <div class="d-flex justify-content-center">
+                <img src="/Images/pharmacy/delivery.png" class="can-show">
+                <h1>طلب و متابعة شهرية لأدويتك بأسهل طريقة</h1>
+            </div>
+            <div class="main-banner">
+                <div class="main-banner-icons">
+                    <img src="/Images/pharmacy/bolt.png">
+                    <div style="width: 99%;">توصيل فورى</div>
+                </div>
+                <div class="main-banner-icons">
+                    <img src="/Images/pharmacy/calender.png">
+                    <div>تذكرة بمواعيد تجديد الدواء</div>
+                </div>
+                <div class="main-banner-icons">
+                    <img src="/Images/pharmacy/doctor.png">
+                    <div>تواصل مع صيدلي</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2 row">
+            <h2>اطلب ادويتك و كل اللي تحتاجه من الصيدلية</h2>
+            <div class="search-container">
+                <div class="internal-search-container">
+                    <button type="button" id="search-close" onclick="close_search()">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <button type="button" class="btn search-start" onclick="TestQuery()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="search" id="input-text" placeholder="ابحث عن طلبك">
+                </div>
+                <div id="search-box" class="result-search-box">
+                    <ul style="list-style: none;" class="m-0 p-0">
+                        <!-- search result -->
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="section2-icons">
+                <label>
+                    <div class="icon-holder">
+                        <img src="/Images/pharmacy/write">
+                        <input type="file" accept="image/*">
+                    </div>
+                    <div>الطلب بالروشتة</div>
+                </label>
+
+                <label>
+                    <div class="icon-holder">
+                        <img style="margin-left: 10px;" src="/Images/pharmacy/bills">
+                        <input type="file" accept="image/*">
+                    </div>
+                    <div>الطلب بصورة المنتج</div>
+                </label>
+
+                <label>
+                    <div class="icon-holder">
+                        <button type="button" class="btn btn-mod" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <i class="fas fa-phone-alt"></i>
+                        </button>
+                    </div>
+                    <div>تواصل مع صيدلي</div>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-style shadow modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark modal-h" id="staticBackdropLabel">
+                                        تواصل
+                                        مع صيدلي</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="shadow p-3 d-flex justify-content-end flex-row mb-5 rounded">
+                                        <a class="me-3 modal-a" href="http://16676">اتصل بنا 16676</a>
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <section class="section3 row">
+            <iframe width="100%"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1bWspxicUNuCruZlnlErXVUfTIvQ9YKPl&ehbc=2E312F"
+                height="500"></iframe>
+        </section>
+
+        <section class="section4 row">
+            <h3>نزل تطبيق فيزيتا</h3>
+            <p>هتقدر تتابع طلبك و اعادة طلب المنتجات السابقة بسهولة و البحث عن المنتجات المختلفة و اكتر</p>
+            <div>
+                <a class="can-hide" href="https://itunes.apple.com/eg/app/vezeeta/id1010281314?" target="_blank">
+                    <img src="/Images/pharmacy/app-store">
+                </a>
+                <a class="can-hide"
+                    href="https://play.google.com/store/apps/details?id=com.ionicframework.vezeetapatientsmobile694843&hl"
+                    target="_blank">
+                    <img src="/Images/pharmacy/google-play">
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer row">
+            <div class="footer-container">
+                <div class="footer-right can-hide">
+                    <img src="/Images/pharmacy/logo-blue">
+                    <ul>
+                        <li>
+                            <a>من نحن</a>
+                        </li>
+                        <li>
+                            <a>فريق فيزيتا</a>
+                        </li>
+                        <li>
+                            <a>وظائف</a>
+                        </li>
+                        <li>
+                            <a>الصحافة</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <span class="can-show" style="font-weight:700;font-size: 20px;text-align:center">تطبق الشروط و
+                    الاحكام</span>
+                <span class="can-show" style="font-size: 13px;text-align:center">سعداء لتلقي استفساراتكم
+                    واقتراحاتكم</span>
+
+                <div class="social-media-container">
+                    <a target="_blank" href="https://www.facebook.com/Vezeeta/">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/VEZEETA_Egypt">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/vezeeta/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/f3501b1fe6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="/js/pharamacyDB.js"></script>
+    <script src="/js/pharmacy.js"></script>
+
+</body>
+
+</html>
